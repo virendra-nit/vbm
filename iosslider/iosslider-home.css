@@ -1,0 +1,186 @@
+/*body {
+	width: 100%;
+	overflow: hidden;
+}*/
+
+.responsiveHeight {
+	width: 100%;
+	height: 250px;
+	padding-bottom: 0;
+	position: relative;
+	/*overflow: visible;*/
+	overflow: hidden;
+}
+
+.responsiveHeight > .inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.iosSlider {
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.iosSlider .slider {
+	width: 100%;
+	height: 100%;
+}
+
+.iosSlider .slider .item {
+	float: left;
+	width: 1290px;
+	height: 100%;
+	text-align: center;
+}
+
+.iosSlider .slider .item1 {
+	background: #666;
+}
+
+.iosSlider .slider .item2 {
+	background: #999;
+}
+
+.iosSlider .slider .item3 {
+	background: #aaa;
+}
+
+.iosSlider .slider .item4 {
+	background: #ddd;
+}
+
+.iosSlider .slider .item5 {
+	background: #777;
+}
+
+.iosSlider .slider .item img {
+	width: 100%;
+}
+
+.indicators {
+	position: relative;
+	top: 10px;
+	left: 0;
+	width: 1024px;
+	height: 10px;
+	margin: 0 auto;
+	z-index: 10;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.indicators .item {
+	display:inline-block;
+/*	float: left;*/
+	width: 8px;
+	height: 8px;
+	margin: 0 5px 0 0;
+	border: 1px solid #000;
+	border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 8px;
+}
+
+.indicators .selected {
+	background: #ed1f24;
+	border: 1px solid #ed1f24
+}
+
+/* controls */
+ .prevContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	
+	padding: 0 0 19.5% 0;
+	z-index: 10;
+}
+
+.prevContainer .prev {
+	position: absolute;
+	bottom: -10%;
+	left: 0;
+	width: 100%;
+	height: 20%;
+	background: #aaa;
+}
+
+ .nextContainer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	
+	padding: 0 0 19.5% 0;
+	z-index: 10;
+}
+
+.nextContainer .next {
+	position: absolute;
+	bottom: -10%;
+	left: 0;
+	width: 100%;
+	height: 20%;
+	background: #aaa;
+}
+
+
+.header-two-box-prev,
+.header-two-box-next{
+	display: block;
+	width: 30px;
+	height: 30px;
+	top: 50%;
+	margin-top: -15px;
+	position: absolute;
+	cursor: pointer;
+	z-index: 10;
+}
+.header-two-box-prev{
+	left: 0;
+	background-image: url(../img/homeBannerBTN-Prev.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-color: rgba(75, 75, 75, .8);	
+	}
+	
+.header-two-box-prev:hover{
+	background-image: url(../img/homeBannerBTN-Prev-hover.jpg);
+	background-color: rgba(75, 75, 75, .5);
+	}
+
+.header-two-box-next{
+	right: 0;
+		background-image: url(../img/homeBannerBTN-Next.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;	
+	}
+	
+	.header-two-box-next:hover{
+	background-image: url(../img/homeBannerBTN-Next-hover.jpg);
+		background-color: rgba(75, 75, 75, .5);
+
+	}
+
+
+@media screen and (max-width: 1290px) {
+	
+	.responsiveHeight {
+		height: 0;
+		padding: 0 0 19.37% 0; /* responsive slider height = 40% of the browser width */ /* 250/1290 = 0.1937 */
+	}
+	
+	.indicators {
+		width: 100%;
+	}
+	
+}
